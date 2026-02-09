@@ -29,5 +29,11 @@
     		<artifactId>Practice</artifactId>
     		<version>0.0.1-SNAPSHOT</version>
     	</dependency>
+    	<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.6.3</version>
+</dependency>
+
     </dependencies>
 </project>

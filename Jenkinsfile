@@ -1,31 +1,30 @@
 pipeline {
     agent any
 
-    tools {
-        jdk 'JDK11'
-        maven 'Maven3'
-    }
-
     stages {
-        stage('Checkout') {
+
+        stage('Debug Environment') {
             steps {
-                checkout scm
+                sh '''
+                  echo "JAVA VERSION"
+                  java -version
+
+                  echo "MAVEN VERSION"
+                  mvn -version
+
+                  echo "WORKSPACE CONTENT"
+                  ls -l
+                '''
             }
         }
 
-        stage('Run Selenium TestNG Tests') {
+        stage('Run Tests') {
             steps {
                 sh '''
-                  mvn clean test -DsuiteXmlFile=testng.xml
+                  mvn clean test
                 '''
             }
         }
     }
-
-    post {
-        always {
-            archiveArtifacts artifacts: '**/target/surefire-reports/*', fingerprint: true
-            testng(pattern: '**/testng-results.xml')
-        }
-    }
 }
+

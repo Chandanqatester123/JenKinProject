@@ -44,8 +44,8 @@ public class LoginAction extends BaseClass {
     @Test
     public void VerifyUN_PWD() throws InterruptedException {
 
-        Loginpage login = new Loginpage(driver);
-        login.login(getUN1(), getPWD1());
+        Loginpage log = new Loginpage(driver);
+        log.login(getUN1(), getPWD1());
 
         Reporter.log("TC is Pass");
     }

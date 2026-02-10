@@ -2,18 +2,18 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven'
-        jdk 'JDK'
+        jdk 'JDK11'
+        maven 'Maven3'
     }
 
     stages {
-        stage('Checkout') {
+        stage('Checkout Code') {
             steps {
-                git 'https://github.com/Chandanqatester123/JenKinProject'
+                checkout scm
             }
         }
 
-        stage('Build & Test') {
+        stage('Run Selenium Tests') {
             steps {
                 sh 'mvn clean test'
             }

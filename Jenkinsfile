@@ -1,30 +1,22 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven'
+        jdk 'JDK'
+    }
+
     stages {
-
-        stage('Debug Environment') {
+        stage('Checkout') {
             steps {
-                sh '''
-                  echo "JAVA VERSION"
-                  java -version
-
-                  echo "MAVEN VERSION"
-                  mvn -version
-
-                  echo "WORKSPACE CONTENT"
-                  ls -l
-                '''
+                git 'https://github.com/Chandanqatester123/JenKinProject'
             }
         }
 
-        stage('Run Tests') {
+        stage('Build & Test') {
             steps {
-                sh '''
-                  mvn clean test
-                '''
+                sh 'mvn clean test'
             }
         }
     }
 }
-

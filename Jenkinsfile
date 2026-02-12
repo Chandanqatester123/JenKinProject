@@ -7,15 +7,19 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
+
+        stage('Checkout') {
             steps {
-                checkout scm
+                git branch: 'main',
+                    url: 'https://github.com/Chandanqatester123/JenKinProject.git'
             }
         }
 
         stage('Run Selenium Tests') {
             steps {
-                sh 'mvn clean test'
+                sh '''
+                mvn clean test
+                '''
             }
         }
     }

@@ -67,6 +67,7 @@ import org.testng.annotations.BeforeSuite;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+
 public class BaseClass {
 
     protected  WebDriver driver;

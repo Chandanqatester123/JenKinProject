@@ -59,6 +59,13 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Loginpage {
 
+    WebDriver driver;
+
+    // Constructor
+    public Loginpage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);  // 🔥 VERY IMPORTANT
+    }
     @FindBy(id = "amember-login")
     private WebElement UN;
 
@@ -67,10 +74,6 @@ public class Loginpage {
 
     @FindBy(xpath = "//input[@value='Login']")
     private WebElement Loginbutton;
-
-    public Loginpage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
-    }
 
     public void login(String username, String password) throws InterruptedException {
         UN.sendKeys(username);

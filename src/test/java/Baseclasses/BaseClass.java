@@ -78,7 +78,7 @@ public class BaseClass {
 		return UN1;
 	}
 	public static String getPWD1() {
-		return PWD1;
+	return PWD1;
 	}
 	
 

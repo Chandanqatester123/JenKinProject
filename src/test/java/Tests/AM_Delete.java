@@ -12,10 +12,11 @@ public class AM_Delete extends BaseClass {
     	LoginAction l=new LoginAction();
 
     	l.VerifyUN_PWD();
-    	Thread.sleep(10);
+    	Thread.sleep(10000);
     	
     	Auto_Mail_Page autoMailPage = new Auto_Mail_Page(driver);
 
+    	autoMailPage.ClickSetting();
         autoMailPage.clickReports();
         autoMailPage.clickAutoEmailReports();
         autoMailPage.selectEntries("200");

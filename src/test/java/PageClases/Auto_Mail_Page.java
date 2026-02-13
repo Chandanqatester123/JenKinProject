@@ -22,14 +22,20 @@ public class Auto_Mail_Page {
     }
 
     // Locators
+    private By Setting_Button =By.xpath("//span[text()='Settings']");
     private By reportsMenu = By.xpath("//span[text()='Reports']");
     private By autoEmailReports = By.xpath("//a[@title='Auto Email Reports']");
     private By showEntriesDropdown = By.id("ShowEntriesList");
     private By deleteIcon = By.xpath("//i[@title='Delete Report']");
     private By confirmDeleteBtn = By.xpath("//button[text()='Yes, delete it!']");
 
+    
     // Actions
 
+    public void ClickSetting()
+    {
+    	wait.until(ExpectedConditions.elementToBeClickable(Setting_Button)).click();
+    }
     public void clickReports() {
         wait.until(ExpectedConditions.elementToBeClickable(reportsMenu)).click();
     }

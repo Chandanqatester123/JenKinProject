@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-02-12T17:04:26 IST" name="Default suite" finished-at="2026-02-12T17:04:35 IST" duration-ms="8736">
+  <suite started-at="2026-02-12T19:22:45 IST" name="Suite" finished-at="2026-02-12T19:22:53 IST" duration-ms="8324">
     <groups>
     </groups>
-    <test started-at="2026-02-12T17:04:26 IST" name="Default test" finished-at="2026-02-12T17:04:35 IST" duration-ms="8736">
+    <test started-at="2026-02-12T19:22:45 IST" name="Test" finished-at="2026-02-12T19:22:53 IST" duration-ms="8324">
       <class name="Tests.AM_Delete">
-        <test-method is-config="true" signature="TestDataInitialization()[pri:0, instance:Tests.AM_Delete@38425407]" started-at="2026-02-12T17:04:26 IST" name="TestDataInitialization" finished-at="2026-02-12T17:04:26 IST" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="TestDataInitialization()[pri:0, instance:Tests.AM_Delete@38425407]" started-at="2026-02-12T19:22:45 IST" name="TestDataInitialization" finished-at="2026-02-12T19:22:45 IST" duration-ms="13" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TestDataInitialization -->
-        <test-method is-config="true" signature="OpenApp()[pri:0, instance:Tests.AM_Delete@38425407]" started-at="2026-02-12T17:04:26 IST" name="OpenApp" finished-at="2026-02-12T17:04:35 IST" duration-ms="8084" status="PASS">
+        <test-method is-config="true" signature="OpenApp()[pri:0, instance:Tests.AM_Delete@38425407]" started-at="2026-02-12T19:22:45 IST" name="OpenApp" finished-at="2026-02-12T19:22:53 IST" duration-ms="7677" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenApp -->
-        <test-method signature="autoMailDeleteTest()[pri:0, instance:Tests.AM_Delete@38425407]" started-at="2026-02-12T17:04:35 IST" name="autoMailDeleteTest" finished-at="2026-02-12T17:04:35 IST" duration-ms="57" status="FAIL">
+        <test-method signature="autoMailDeleteTest()[pri:0, instance:Tests.AM_Delete@38425407]" started-at="2026-02-12T19:22:53 IST" name="autoMailDeleteTest" finished-at="2026-02-12T19:22:53 IST" duration-ms="51" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
@@ -25,7 +25,7 @@
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy13.sendKeys(Unknown Source)
-at PageClases.Loginpage.login(Loginpage.java:76)
+at PageClases.Loginpage.login(Loginpage.java:79)
 at Tests.LoginAction.VerifyUN_PWD(LoginAction.java:48)
 at Tests.AM_Delete.autoMailDeleteTest(AM_Delete.java:14)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -60,11 +60,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autoMailDeleteTest -->
-        <test-method is-config="true" signature="CloseAll()[pri:0, instance:Tests.AM_Delete@38425407]" started-at="2026-02-12T17:04:35 IST" name="CloseAll" finished-at="2026-02-12T17:04:35 IST" duration-ms="552" status="PASS">
+        <test-method is-config="true" signature="CloseAll()[pri:0, instance:Tests.AM_Delete@38425407]" started-at="2026-02-12T19:22:53 IST" name="CloseAll" finished-at="2026-02-12T19:22:53 IST" duration-ms="560" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseAll -->
       </class> <!-- Tests.AM_Delete -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

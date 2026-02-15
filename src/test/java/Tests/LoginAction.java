@@ -32,7 +32,8 @@
 //}
 
 package Tests;
-
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -40,6 +41,10 @@ import Baseclasses.BaseClass;
 import PageClases.Loginpage;
 
 public class LoginAction extends BaseClass {
+	 LoginAction(WebDriver driver) {
+	    this.driver = driver;
+	    PageFactory.initElements(driver, this);
+	}
 
     @Test
     public void VerifyUN_PWD() throws InterruptedException {

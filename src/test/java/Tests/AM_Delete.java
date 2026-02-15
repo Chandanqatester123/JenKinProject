@@ -9,7 +9,7 @@ public class AM_Delete extends BaseClass {
 
     @Test 
     public void autoMailDeleteTest() throws InterruptedException {
-    	LoginAction l=new LoginAction();
+    	LoginAction l=new LoginAction(driver);
 
     	l.VerifyUN_PWD();
     	Thread.sleep(10000);

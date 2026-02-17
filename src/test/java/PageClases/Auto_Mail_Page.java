@@ -40,21 +40,21 @@ public class Auto_Mail_Page {
         wait.until(ExpectedConditions.elementToBeClickable(reportsMenu)).click();
     }
 
-    public void clickAutoEmailReports() {
+    public void clickAutoEmailReports() throws InterruptedException {
         wait.until(ExpectedConditions.elementToBeClickable(autoEmailReports)).click();
     }
 
-    public void selectEntries(String value) {
+    public void selectEntries(String value) throws InterruptedException {
         Select select = new Select(wait.until(
                 ExpectedConditions.visibilityOfElementLocated(showEntriesDropdown)));
         select.selectByVisibleText(value);
     }
 
-    public void deleteAllReports() {
+    public void deleteAllReports() throws InterruptedException {
 
     	boolean value=true;
         while (value) {
-
+        	
             List<WebElement> deleteButtons = driver.findElements(deleteIcon);
 
             if (deleteButtons.size() == 0) {

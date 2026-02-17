@@ -135,9 +135,9 @@ from disconnected: not connected to DevTools
 Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.7&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f0070a450ab5845d9aee36b9e45ea631, findElement {using=xpath, value=//span[text()=&apos;Settings&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55044}, goog:processID: 8228, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55044/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f0070a450ab5845d9aee36b9e45ea631
+Command: [0ee67443199030db92febd63bf66d4ad, findElement {using=id, value=ShowEntriesList}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 144.0.7559.133, chrome: {chromedriverVersion: 144.0.7559.133 (7da823b1d59..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57569}, goog:processID: 25112, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57569/devtoo..., se:cdpVersion: 144.0.7559.133, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 0ee67443199030db92febd63bf66d4ad
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -151,11 +151,9 @@ Session ID: f0070a450ab5845d9aee36b9e45ea631
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
 	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:627)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:624)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at PageClases.Auto_Mail_Page.ClickSetting(Auto_Mail_Page.java:37)
-	at Tests.AM_Delete.autoMailDeleteTest(AM_Delete.java:19)
+	at PageClases.Auto_Mail_Page.selectEntries(Auto_Mail_Page.java:49)
+	at Tests.AM_Delete.autoMailDeleteTest(AM_Delete.java:22)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
@@ -219,12 +217,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'autoMailDeleteTest')
 data.setCell(0, 2, 'Tests.AM_Delete')
-data.setCell(0, 3, 20673);
+data.setCell(0, 3, 28526);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 28 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -269,11 +267,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">autoMailDeleteTest</span>
-                <span class="method-start">7178 ms</span>
+                <span class="method-start">8037 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">CloseAll</span>
-                <span class="method-start">27859 ms</span>
+                <span class="method-start">36572 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -78,7 +78,6 @@ public class Loginpage {
     public void login(String username, String password) throws InterruptedException {
         UN.sendKeys(username);
         PWD.sendKeys(password);
-        Thread.sleep(10000);
         Loginbutton.click();
     }
 }

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.AM_Delete">
+      <class name="Tests.AlertPoliciesTest">
         <methods>
           <include name="CloseAll"/>
           <include name="TestDataInitialization"/>
-          <include name="autoMailDeleteTest"/>
+          <include name="deleteAlertPolicyTest"/>
           <include name="OpenApp"/>
         </methods>
-      </class> <!-- Tests.AM_Delete -->
+      </class> <!-- Tests.AlertPoliciesTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -70,13 +70,12 @@ public class String_Class {
 //	Split the words and Reverse the words
 	public void Reverse_Words()
 	{
-//		| Code         | Meaning               |
-//		| ------------ | --------------------- |
-//		| `split("")`  | Split into characters |
-//		| `split(" ")` | Split into words      |
-//		| `charAt(i)`  | Access one character  |
-//		| `next()`     | Reads one word        |
-//		| `nextLine()` | Reads full sentence   |
+//		| Code       | Meaning               |
+//		| split("")  | Split into characters |
+//		| split(" ") | Split into words      |
+//		| charAt(i)  | Access one character  |
+//		| next()     | Reads one word        |
+//		| nextLine() | Reads full sentence   |
 
 		Scanner sc=new Scanner (System.in);
 		System.out.println("Enter a String");

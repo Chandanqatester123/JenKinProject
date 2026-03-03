@@ -12,17 +12,16 @@ public class InterView {
 //		| `next()`     | Reads one word        |
 //		| `nextLine()` | Reads full sentence   |
 
-		Scanner sc=new Scanner (System.in);
-		System.out.println("Enter a String");
-		String Sentence=sc.nextLine();
-		
-		String[] Split_Words=Sentence.split(" ");
-		String Word_Reverse="";
-		for (int i=Split_Words.length-1; i>=0; i-- )
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the string");
+		String s=sc.nextLine();
+		String[] split=s.split(" ");
+		String Reverse="";
+		for (int i=split.length-1; i>=0;i--)
 		{
-			Word_Reverse=Word_Reverse+Split_Words[i]+" ";
+			Reverse=Reverse+ split[i]+" ";
 		}
-		System.out.println(Word_Reverse.trim());
+		System.out.println(Reverse);
 	}
 
 }

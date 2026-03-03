@@ -86,7 +86,7 @@ public class String_Class {
 		{
 			Word_Reverse=Word_Reverse+Split_Words[i]+" ";
 		}
-		System.out.println(Word_Reverse.trim());
+		System.out.println(Word_Reverse);
 	}
 	
 	public void Swap_Number_Withoutusing_ThirdNo()

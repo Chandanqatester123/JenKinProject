@@ -12,7 +12,6 @@ public class InterView {
 //		| `next()`     | Reads one word        |
 //		| `nextLine()` | Reads full sentence   |
 
-<<<<<<< HEAD
 		Scanner sc=new Scanner (System.in);
 		System.out.println("Enter a String");
 		String Sentence=sc.nextLine();
@@ -24,18 +23,6 @@ public class InterView {
 			reverse_words=reverse_words+Slpit_words[i]+" ";
 		}
 		System.out.println(reverse_words);
-=======
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter the string");
-		String s=sc.nextLine();
-		String[] split=s.split(" ");
-		String Reverse="";
-		for (int i=split.length-1; i>=0;i--)
-		{
-			Reverse=Reverse+ split[i]+" ";
-		}
-		System.out.println(Reverse);
->>>>>>> a8cac554ca0b4a29d6e0566b28ead578502da293
 	}
 
 }

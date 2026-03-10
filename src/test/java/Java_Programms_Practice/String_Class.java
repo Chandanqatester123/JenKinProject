@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class String_Class {
 	static Scanner sc=new Scanner(System .in);
-	
-//	Find_Largest_Array
+
 	public void Find_Largest_Array()
 	{
 		System.out.println("Eneter teh Array Size");
@@ -87,7 +86,7 @@ public class String_Class {
 		{
 			Word_Reverse=Word_Reverse+Split_Words[i]+" ";
 		}
-		System.out.println(Word_Reverse.trim());
+		System.out.println(Word_Reverse);
 	}
 	
 	public void Swap_Number_Withoutusing_ThirdNo()
@@ -128,5 +127,6 @@ public class String_Class {
 			System.out.println("Not a Palindrome");
 		}
 	}
+
 
 }

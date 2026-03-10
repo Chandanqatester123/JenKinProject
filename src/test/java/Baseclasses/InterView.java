@@ -16,13 +16,13 @@ public class InterView {
 		System.out.println("Enter a String");
 		String Sentence=sc.nextLine();
 		
-		String[] Split_Words=Sentence.split(" ");
-		String Word_Reverse="";
-		for (int i=Split_Words.length-1; i>=0; i-- )
+		String[] Slpit_words=Sentence.split(" ");
+		String reverse_words="";
+		for(int i=Slpit_words.length-1;i>=0; i--)
 		{
-			Word_Reverse=Word_Reverse+Split_Words[i]+" ";
+			reverse_words=reverse_words+Slpit_words[i]+" ";
 		}
-		System.out.println(Word_Reverse.trim());
+		System.out.println(reverse_words);
 	}
 
 }

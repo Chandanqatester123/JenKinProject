@@ -4,42 +4,49 @@ import java.util.Scanner;
 
 public class InterView {
 	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Eneter a String ");
+		String s=sc.nextLine();
 		
-		Scanner sc=new Scanner (System.in);
-		System.out.println("Enter the Array size");
-		int Size=sc.nextInt();
+		String Reverse_Words="";
 		
-		String s[]=new String[Size];
-		sc.nextLine();
-		System.out.println("Enter the Array Element");
-		for(int i=0;i<s.length;i++)
+		String[] split=s.split(" ");
+		for(int i=split.length-1; i>=0; i--)
 		{
-			s[i]=sc.nextLine();
-			
+			Reverse_Words=Reverse_Words+ split[i]+" ";
 		}
-		System.out.println("Enter the Name Which you wants to search");
-		String Search_Name=sc.nextLine();
-		String found=s[0];
-		String not_found=s[0];
 		
-		for (int i=0;i<s.length;i++)
+		System.out.println(Reverse_Words);
+			
+		String Arr[]=new String[4];
+		sc.nextLine();
+		
+		for (int i=0;i<Arr.length-1;i++)
 		{
-			if(s[i].equals(Search_Name))
+			Arr[i]=sc.nextLine();
+		}
+		System.out.println("Enter the search element");
+		String Search=sc.nextLine();
+		String get=Arr[0];
+		String notget=Arr[0];
+		
+		for (int i=0; i<Arr.length-1; i++)
+		{
+			if(Search.equals(Arr[i]))
 			{
-				found=s[i];
+				get=Search;
 			}
 			else
 			{
-				not_found=s[i];
+				notget=Search;
 			}
 		}
-		if(found.equals(Search_Name))
+		if(Search.equals(get))
 		{
-			System.out.println(Search_Name+"  The name is present in the Array");
+			System.out.println(get + "  Element is present");
 		}
 		else
 		{
-			System.out.println(Search_Name+"  This name is not available");
+			System.out.println(notget+"  Element is not present");
 		}
-			
 }}

@@ -16,6 +16,7 @@ public class String_Class {
 		{
 			a[i]=sc.nextInt();
 		}
+//		int max=Integer.MIN_VALUE;
 		int max=Integer.MIN_VALUE;
 		int min=Integer.MAX_VALUE;
 		
@@ -103,6 +104,8 @@ public class String_Class {
 		System.out.println("Enter the Array size");
 		int Size=sc.nextInt();
 		
+//		String s[]=new String[Size];
+//		sc.nextLine();
 		String s[]=new String[Size];
 		sc.nextLine();
 		System.out.println("Enter the Array Element");

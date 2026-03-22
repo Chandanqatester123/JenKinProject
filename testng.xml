@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Tests.AM_Delete"/>
+      <class name="Tests.Employee_Register_Action"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

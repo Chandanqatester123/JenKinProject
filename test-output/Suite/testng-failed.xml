@@ -3,14 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="Tests.AM_Delete">
+      <class name="Tests.Employee_Register_Action">
         <methods>
-          <include name="CloseAll"/>
+          <include name="Register_Employee"/>
           <include name="TestDataInitialization"/>
-          <include name="autoMailDeleteTest"/>
+          <include name="CloseAll"/>
           <include name="OpenApp"/>
         </methods>
-      </class> <!-- Tests.AM_Delete -->
+      </class> <!-- Tests.Employee_Register_Action -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

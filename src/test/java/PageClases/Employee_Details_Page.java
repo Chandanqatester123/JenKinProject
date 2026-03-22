@@ -26,8 +26,9 @@ public class Employee_Details_Page {
 	
 //	Employee
 	@FindBy (xpath="//*[@id='sidebar_menus']/li[2]/a/span") private WebElement Employee ;
-	public void Employee_Click()
+	public void Employee_Click() throws InterruptedException
 	{
+		Thread.sleep(10);
 		wait.until(ExpectedConditions.elementToBeClickable(Employee)).click();
 	}
 	

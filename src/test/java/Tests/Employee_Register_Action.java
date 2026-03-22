@@ -10,8 +10,8 @@ public class Employee_Register_Action extends BaseClass{
 	@Test
 	public void Register_Employee() throws InterruptedException
 	{
-		Loginpage login = new Loginpage(driver);
-        login.login(getUN1(), getPWD1());
+		LoginAction l=new LoginAction(driver);
+		l.VerifyUN_PWD();
         
 		Employee_Details_Page EDP=new Employee_Details_Page(driver);
 		EDP.Employee_Click();
@@ -27,6 +27,8 @@ public class Employee_Register_Action extends BaseClass{
 		EDP.Select_Role(getRole_Name());
 		EDP.Select_Department_Dropdown(getDepartment_name());
 		EDP.Select_Timezone_Dropdown(getTimeZone_No());
+		
+		Thread.sleep(5000);
 		EDP.Register_Employee_Button_Click();
 		
 		Thread.sleep(10000);

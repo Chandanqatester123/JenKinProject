@@ -84,7 +84,7 @@ public class BaseClass {
 	private static String FN;
     private static String LN;
     private static String MailID;
-    private static String PWD;
+    private static String PWD5;
     private static String Country_Code;
     private static String Mobile_no;
     private static String Employee_Code;
@@ -103,7 +103,7 @@ public class BaseClass {
 		return MailID;
 	}
 	public static String getPWD() {
-		return PWD;
+		return PWD5;
 	}
 	public static String getCountry_Code() {
 		return Country_Code;
@@ -134,7 +134,7 @@ public class BaseClass {
 
 	@BeforeSuite
     public void TestDataInitialization() throws Exception {
-    	FileInputStream fis=new FileInputStream("C:\\Users\\GBSBHL1372\\eclipse-workspace\\JenKinProject\\src\\test\\resources\\TestData.properties");
+    	FileInputStream fis=new FileInputStream("C:\\Users\\chand\\eclipse-workspace\\JenKinProject\\src\\test\\resources\\TestData.properties");
 		Properties prop =new Properties();
 	    prop.load(fis);
 	    String UNValue=prop.getProperty("UN");
@@ -144,7 +144,7 @@ public class BaseClass {
 	    FN=prop.getProperty("FN");
 	    LN=prop.getProperty("LN");
 	    MailID=prop.getProperty("Mail");
-	    PWD=prop.getProperty("PWD");
+	    PWD5=prop.getProperty("PWD5");
 	    Country_Code=prop.getProperty("CountryCode");
 	    Mobile_no=prop.getProperty("Mobile_no");
 	    Employee_Code=prop.getProperty("Employee_Code");

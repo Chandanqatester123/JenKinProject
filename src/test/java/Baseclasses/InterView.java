@@ -1,16 +1,21 @@
 package Baseclasses;
 
-public class InterView {
-	static int weight=70;
-	
+import java.util.Scanner;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class InterView {	
 	public static void main(String[] args)
 	{
-
+		int a=2;
+		int b=3;
+		int c=4;
+		int d=++a + ++b + ++c + ++a + a+ b+c + ++c;
+		System.out.println(d);
+//		     =3+4+5+4+4+4+5+6;
 	}
-	static 
-	{ 
-		int age1=34;
-		System.out.println("Intilizer= "+weight);
-		
-	}
+	
+	
+	
 }

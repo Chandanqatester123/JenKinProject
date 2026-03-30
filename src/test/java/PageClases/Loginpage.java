@@ -1,85 +1,34 @@
-//package PageClases;
 //
-//import java.io.FileInputStream;
-//import java.io.IOException;
-//import java.util.Properties;
+//package PageClases;
 //
 //import org.openqa.selenium.WebDriver;
 //import org.openqa.selenium.WebElement;
 //import org.openqa.selenium.support.FindBy;
 //import org.openqa.selenium.support.PageFactory;
-//import org.testng.annotations.BeforeSuite;
+//import org.testng.annotations.Test;
 //
-//import Baseclasses.BaseClass;
 //
-//public class Loginpage extends BaseClass{
-////	Login Page UN
-//	@FindBy(id="amember-login") private WebElement UN;
-////	LoginPage PWD
-//	@FindBy (id="amember-pass") private WebElement PWD;
-//	
-////	LoginButton
-//	@FindBy(xpath="//input[@value='Login']") private WebElement Loginbutton;
-//	
-//    
-//	public Loginpage (WebDriver driver)
-//	{
-//		PageFactory.initElements(driver, this);
-//	}
+//public class Loginpage {
 //
-//	public WebElement getUN() {
-//		return UN;
-//	}
+//    WebDriver driver;
 //
-//	public void setUN(WebElement uN) {
-//		UN = uN;
-//	}
+//    // Constructor
+//    public Loginpage(WebDriver driver) {
+//        this.driver = driver;
+//        PageFactory.initElements(driver, this);  // 🔥 VERY IMPORTANT
+//    }
+//    @FindBy(id = "amember-login")
+//    private WebElement UN;
 //
-//	public WebElement getPWD() {
-//		return PWD;
-//	}
+//    @FindBy(id = "amember-pass")
+//    private WebElement PWD;
 //
-//	public void setPWD(WebElement pWD) {
-//		PWD = pWD;
-//	}
-//	public void Login(String Username , String Password)
-//	{
-//		UN.sendKeys(Username);
-//		PWD.sendKeys(Password);
-//		Loginbutton.click();	
-//	}
+//    @FindBy(xpath = "//input[@value='Login']")
+//    private WebElement Loginbutton;
+//
+//    public void login(String username, String password) throws InterruptedException {
+//        UN.sendKeys(username);
+//        PWD.sendKeys(password);
+//        Loginbutton.click();
+//    }
 //}
-
-package PageClases;
-
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Test;
-
-
-public class Loginpage {
-
-    WebDriver driver;
-
-    // Constructor
-    public Loginpage(WebDriver driver) {
-        this.driver = driver;
-        PageFactory.initElements(driver, this);  // 🔥 VERY IMPORTANT
-    }
-    @FindBy(id = "amember-login")
-    private WebElement UN;
-
-    @FindBy(id = "amember-pass")
-    private WebElement PWD;
-
-    @FindBy(xpath = "//input[@value='Login']")
-    private WebElement Loginbutton;
-
-    public void login(String username, String password) throws InterruptedException {
-        UN.sendKeys(username);
-        PWD.sendKeys(password);
-        Loginbutton.click();
-    }
-}

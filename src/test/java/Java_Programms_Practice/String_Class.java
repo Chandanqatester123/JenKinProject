@@ -45,14 +45,14 @@
 //		int Size=sc.nextInt();
 //		int a[]=new int[Size];
 //		
-//		System.out.println("Enter Arry Elements");
+//		System.out.println("Enter Array Elements");
 //		for(int i=0; i<a.length; i++)
 //		{
 //			a[i]=sc.nextInt();
 //		}
 //		int Largest=Integer.MIN_VALUE;
 //		int Second_Largest=Integer.MIN_VALUE;
-//		for(int i=0; i<a.length; i++)
+//		for(int i=0; i<a.length;i++)
 //		{
 //			if(a[i]>Largest)
 //			{
@@ -169,6 +169,4 @@
 //			System.out.println("Not a Palindrome");
 //		}
 //	}
-//
-//
 //}

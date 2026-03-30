@@ -15,7 +15,7 @@ public class Chandan_EMP_Test {
 	@Test
 	public void Login_Action_Test() throws InterruptedException {
 		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless"); // IMPORTANT
+		options.addArguments("--headless=new"); // IMPORTANT
 		options.addArguments("--no-sandbox");
 		options.addArguments("--disable-dev-shm-usage");
 

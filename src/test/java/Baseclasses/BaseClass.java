@@ -80,7 +80,8 @@ public class BaseClass {
 
 	@BeforeSuite
     public void TestDataInitialization() throws Exception {
-    	FileInputStream fis=new FileInputStream("C:\\Users\\chand\\eclipse-workspace\\JenKinProject\\src\\test\\resources\\TestData.properties");
+//    	FileInputStream fis=new FileInputStream("C:\\Users\\chand\\eclipse-workspace\\JenKinProject\\src\\test\\resources\\TestData.properties");
+		InputStream fis = getClass().getClassLoader().getResourceAsStream("TestData.properties");
 		Properties prop =new Properties();
 	    prop.load(fis);
 	    String UNValue=prop.getProperty("UN");

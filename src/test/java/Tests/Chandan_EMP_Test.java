@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -13,7 +14,13 @@ import org.testng.annotations.Test;
 public class Chandan_EMP_Test {
 	@Test
 	public void Login_Action_Test() throws InterruptedException {
-		WebDriver driver=new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless"); // IMPORTANT
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
+
+		WebDriver driver = new ChromeDriver(options);
+//		WebDriver driver=new ChromeDriver();
 		driver.get("https://app.empmonitor.com/amember/member");
 		
 		driver.manage().window().maximize();

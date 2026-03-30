@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.Employee_Register_Action">
+      <class name="Tests.Chandan_EMP_Test">
         <methods>
-          <include name="Register_Employee"/>
-          <include name="TestDataInitialization"/>
-          <include name="CloseAll"/>
-          <include name="OpenApp"/>
+          <include name="Login_Action_Test"/>
         </methods>
-      </class> <!-- Tests.Employee_Register_Action -->
+      </class> <!-- Tests.Chandan_EMP_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

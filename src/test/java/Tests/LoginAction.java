@@ -32,8 +32,9 @@
 //}
 
 package Tests;
+
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -41,17 +42,19 @@ import Baseclasses.BaseClass;
 import PageClases.Loginpage;
 
 public class LoginAction extends BaseClass {
-	 LoginAction(WebDriver driver) {
-	    this.driver = driver;
-	    PageFactory.initElements(driver, this);
-	}
+
+    WebDriver driver;
+    Loginpage lp;
 
     @Test
     public void VerifyUN_PWD() throws InterruptedException {
 
-        Loginpage log = new Loginpage(driver);
-        log.login(getUN1(), getPWD1());
+        driver = new ChromeDriver();
+        lp = new Loginpage(driver);
 
-        Reporter.log("TC is Pass");
+        lp.login("Chandan", "Raut");
+        Thread.sleep(10000);
+
+//        Reporter.log("TC is Pass");
     }
 }

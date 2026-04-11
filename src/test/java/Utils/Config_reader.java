@@ -2,8 +2,9 @@ package Utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
-
+import org.testng.annotations.Test; // ✅ correct
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -18,8 +19,9 @@ public class Config_reader {
     private static String Valid_PWD;
     private static String Invalid_UN;
     private static String Invalid_PWD;
+    private static String URL;
 
-    
+
     // Static block (runs automatically)
     @BeforeSuite
     public void Before_Suite() {
@@ -31,12 +33,17 @@ public class Config_reader {
             e.printStackTrace();
         }
     }
+    
     @BeforeMethod
     public void Before_Method() {
         driver=new ChromeDriver();
-        driver.get(("https://app.empmonitor.com/amember/member"));
+        URL=p.getProperty("URL");
+        driver.get((URL));
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
+    
     @AfterMethod
     public void After_Method() 
     {
@@ -44,6 +51,20 @@ public class Config_reader {
     }
 
     public String getUN1() {
-        return p.getProperty("Valid_UN");
+        Valid_UN=p.getProperty("Valid_UN");
+        return Valid_UN;
     }
+    public String getPWD1() {
+        Valid_PWD=p.getProperty("Valid_PWD");
+        return Valid_PWD;
+    }
+    public String getInvalid_UN() {
+        Invalid_UN=p.getProperty("Invalid_UN");
+        return Invalid_UN;
+    }
+    public String getInvalid_PWD() {
+        Invalid_PWD=p.getProperty("Invalid_PWD");
+        return Invalid_PWD;
+    }
+
 }

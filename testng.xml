@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="Tests.Chandan_EMP_Test"/>
+      <class name="Tests.Login_Action_Verify_Valid_Invalid"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

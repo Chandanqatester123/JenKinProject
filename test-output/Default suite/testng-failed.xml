@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Tests.Chandan_EMP_Test">
+      <class name="Tests.Login_Action_Verify_Valid_Invalid">
         <methods>
-          <include name="Login_Action_Test"/>
+          <include name="After_Method"/>
+          <include name="Before_Method"/>
+          <include name="Login_Action_Verify_Valid_Test"/>
+          <include name="Before_Suite"/>
+          <include name="Login_Action_Verify_Invalid_Test"/>
         </methods>
-      </class> <!-- Tests.Chandan_EMP_Test -->
+      </class> <!-- Tests.Login_Action_Verify_Valid_Invalid -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

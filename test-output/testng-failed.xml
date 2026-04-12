@@ -9,7 +9,6 @@
           <include name="Before_Method"/>
           <include name="Login_Action_Verify_Valid_Test"/>
           <include name="Before_Suite"/>
-          <include name="Login_Action_Verify_Invalid_Test"/>
         </methods>
       </class> <!-- Tests.Login_Action_Verify_Valid_Invalid -->
     </classes>

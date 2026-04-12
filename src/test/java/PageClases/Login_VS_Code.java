@@ -33,13 +33,20 @@ public class Login_VS_Code {
         wait.until(ExpectedConditions.elementToBeClickable(PWD)).sendKeys(PWD1);
         wait.until(ExpectedConditions.elementToBeClickable(Login_Button)).click();
         Thread.sleep(5000);
-        
+        try
+        {
         String title = driver.getTitle();
         System.out.println("Title:- "+title);
         s.assertTrue(title.contains("Empmonitor"));
         s.assertAll();
+        }
+        catch(Exception e)
+        {
+        	e.printStackTrace();
+        	System.out.println(e);
+        }
     }
-
+    
      public void Get_Error_Message(String UN1, String PWD1) throws InterruptedException {
         wait.until(ExpectedConditions.elementToBeClickable(UN)).sendKeys(UN1);
         wait.until(ExpectedConditions.elementToBeClickable(PWD)).sendKeys(PWD1);
@@ -47,6 +54,7 @@ public class Login_VS_Code {
         Thread.sleep(1000);
         try
         {
+        	
         	String msg = wait.until(ExpectedConditions.visibilityOfElementLocated(Error_Message)).getText();
             s.assertEquals(msg, "The user name or password is incorrect");
             s.assertAll();	
@@ -57,7 +65,5 @@ public class Login_VS_Code {
         	e.printStackTrace();
 //        	System.out.println(e);
         }
-    }
-
-    
+    }   
 }

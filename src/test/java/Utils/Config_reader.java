@@ -2,6 +2,7 @@ package Utils;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.time.Duration;
 import java.util.Properties;
 import org.testng.annotations.Test; // ✅ correct
@@ -26,7 +27,8 @@ public class Config_reader {
     @BeforeSuite
     public void Before_Suite() {
         try {
-            FileInputStream fis = new FileInputStream("src\\test\\resources\\Chandan_New_Test_Data.properties");
+//            FileInputStream fis = new FileInputStream("src\\test\\resources\\Chandan_New_Test_Data.properties");
+            InputStream fis = getClass().getClassLoader().getResourceAsStream("src\\\\test\\\\resources\\\\Chandan_New_Test_Data.properties");
             p = new Properties();
             p.load(fis);
         } catch (IOException e) {

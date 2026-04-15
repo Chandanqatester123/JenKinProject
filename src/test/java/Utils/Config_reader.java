@@ -40,9 +40,9 @@ public class Config_reader {
     @BeforeMethod
     public void Before_Method() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--headless=new");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--disable-dev-shm-usage");
+//        options.addArguments("--headless=new");
+//        options.addArguments("--no-sandbox");
+//        options.addArguments("--disable-dev-shm-usage");
         driver = new ChromeDriver(options);
         
 //        driver=new ChromeDriver();
